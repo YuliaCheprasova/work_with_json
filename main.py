@@ -15,5 +15,6 @@ with open('hope.json', 'r') as f2:
     ndJson = ''
     for j in data:
         ndJson += json.dumps(j, ensure_ascii=False) + '\n'
-
+with open('ndjson1.json','w') as f3:
+    f3.write(ndJson)
 print(ndJson)
